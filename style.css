@@ -1,0 +1,109 @@
+.btn-1{
+    margin: 30px;
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(46, 46, 206);
+    border: none;
+
+    position: relative;
+    /* Shadow */
+    box-shadow: -6px 6px 0 rgb(28, 28, 124);
+}
+
+/* Fixing the Outline Problem */
+.btn-1:focus{
+    outline: none;
+}
+
+/* Hover Effect */
+.btn-1:hover{
+    background-color: rgb(44, 44, 189);
+}
+
+/* Push Effect */
+.btn-1:active{
+    left: -3px;
+    top: 3px;
+    box-shadow: -3px 3px 0 rgb(28, 28, 124);
+}
+
+/* Fixing the corners */
+.btn-1::before{
+    content: "";
+    width: 0;
+    height: 0;
+
+    border: 6px solid transparent;
+    border-right-color: rgb(28, 28, 124);
+    border-left-width: 0;/*Made triangle */
+
+    position: absolute;
+    display: block;
+    left: -6px;
+    top: 0;
+}
+
+/* Fixing the corners in effect */
+.btn-1:active::before{
+    border-width: 3px;
+}
+
+/*Fixing The Other Corner */
+
+.btn-1::after{
+    content: "";
+    width: 0;
+    height: 0;
+
+    border: 6px solid transparent;
+    border-top-color: rgb(28, 28, 124);
+    border-bottom-width: 0;/*Made triangle */
+
+    position: absolute;
+    display: block;
+    bottom: -6px;
+    right: 0;
+}
+
+/* Fixing the last corner in effect */
+.btn-1:active::after{
+    border-width: 3px;
+}
+
+/* OTHER BUTTON */
+
+.btn-2{
+    margin: 30px;
+    padding: 3rem 2rem;
+    border-radius: 100%;
+    border: none;
+    background-color: rgb(179, 7, 7);
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    /* Shadow */
+    box-shadow: 0 12px 0 rgb(112, 5, 5);
+}
+
+/* Fixing the Outline */
+.btn-2:focus{
+    outline: none;
+}
+
+/* Hover Effect */
+.btn-2:hover{
+    background-color: rgb(155, 9, 9);
+}
+
+/* Push Effect */
+.btn-2:active{
+    top: 5px;
+    box-shadow: 0 7px rgb(112, 5, 5);
+}
+
+
+/* It is Ready To Use !!!!!!!!! */
+
